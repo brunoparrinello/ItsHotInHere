@@ -14,8 +14,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *convertButton;
 
 - (IBAction)buttonPressed:(id)sender;
-- (IBAction)fahrenheitValueChanged:(id)sender;
-- (IBAction)celsiusValueEdited:(id)sender;
+- (IBAction)celsiusEditingDidBegin:(id)sender;
+- (IBAction)fahrenheitEditingDidBegin:(id)sender;
 
 - (float)celsiusToFahrenheit:(float)celsiusValue;
 - (float)fahrenheitToCelsius:(float)fahrenheitValue;
@@ -43,8 +43,6 @@ BOOL inputIsFahrenheit = YES;
     // Prompt the Fahrenheit text field, which brings up the keyboard.
     [self.fahrenheitTextField becomeFirstResponder];
     
-    self.celsiusTextField.delegate = self;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,23 +51,13 @@ BOOL inputIsFahrenheit = YES;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - UITextField methods
-
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-
-    inputIsFahrenheit = NO;
-    
-    return YES;
-}
-
 #pragma mark - private methods
 
-
-- (IBAction)celsiusValueEdited:(id)sender {
+- (IBAction)celsiusEditingDidBegin:(id)sender {
     inputIsFahrenheit = NO;
 }
 
-- (IBAction)fahrenheitValueChanged:(id)sender {
+- (IBAction)fahrenheitEditingDidBegin:(id)sender {
     inputIsFahrenheit = YES;
 }
 

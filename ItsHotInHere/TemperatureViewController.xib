@@ -49,6 +49,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                     <connections>
+                        <action selector="fahrenheitEditingDidBegin:" destination="-1" eventType="editingDidBegin" id="Y9F-RL-quK"/>
                         <action selector="fahrenheitValueChanged:" destination="-1" eventType="valueChanged" id="Rza-BC-CuU"/>
                     </connections>
                 </textField>
@@ -58,8 +59,8 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                     <connections>
+                        <action selector="celsiusEditingDidBegin:" destination="-1" eventType="editingDidBegin" id="IbO-UG-xvI"/>
                         <action selector="celsiusValueChanged:" destination="-1" eventType="valueChanged" id="LF3-lq-pNO"/>
-                        <action selector="celsiusValueEdited:" destination="-1" eventType="editingDidEnd" id="eAz-1M-Knw"/>
                         <outlet property="delegate" destination="-1" id="hYP-gL-vog"/>
                     </connections>
                 </textField>
