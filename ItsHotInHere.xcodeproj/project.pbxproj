@@ -19,6 +19,8 @@
 		0AA2C8FA1883709B00F48A54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA2C8E21883709B00F48A54 /* UIKit.framework */; };
 		0AA2C9021883709B00F48A54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2C9001883709B00F48A54 /* InfoPlist.strings */; };
 		0AA2C9041883709B00F48A54 /* ItsHotInHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2C9031883709B00F48A54 /* ItsHotInHereTests.m */; };
+		0AA2C910188370C600F48A54 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA2C90E188370C600F48A54 /* TemperatureViewController.m */; };
+		0AA2C911188370C600F48A54 /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2C90F188370C600F48A54 /* TemperatureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		0AA2C8FF1883709B00F48A54 /* ItsHotInHereTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ItsHotInHereTests-Info.plist"; sourceTree = "<group>"; };
 		0AA2C9011883709B00F48A54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0AA2C9031883709B00F48A54 /* ItsHotInHereTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItsHotInHereTests.m; sourceTree = "<group>"; };
+		0AA2C90D188370C600F48A54 /* TemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureViewController.h; sourceTree = "<group>"; };
+		0AA2C90E188370C600F48A54 /* TemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureViewController.m; sourceTree = "<group>"; };
+		0AA2C90F188370C600F48A54 /* TemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				0AA2C8EE1883709B00F48A54 /* AppDelegate.m */,
 				0AA2C8F01883709B00F48A54 /* Images.xcassets */,
 				0AA2C8E51883709B00F48A54 /* Supporting Files */,
+				0AA2C90D188370C600F48A54 /* TemperatureViewController.h */,
+				0AA2C90E188370C600F48A54 /* TemperatureViewController.m */,
+				0AA2C90F188370C600F48A54 /* TemperatureViewController.xib */,
 			);
 			path = ItsHotInHere;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA2C8E91883709B00F48A54 /* InfoPlist.strings in Resources */,
+				0AA2C911188370C600F48A54 /* TemperatureViewController.xib in Resources */,
 				0AA2C8F11883709B00F48A54 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA2C910188370C600F48A54 /* TemperatureViewController.m in Sources */,
 				0AA2C8EF1883709B00F48A54 /* AppDelegate.m in Sources */,
 				0AA2C8EB1883709B00F48A54 /* main.m in Sources */,
 			);
