@@ -14,8 +14,8 @@
 @property (strong, nonatomic) IBOutlet UIButton *convertButton;
 
 - (IBAction)buttonPressed:(id)sender;
-- (IBAction)celsiusEditingDidBegin:(id)sender;
-- (IBAction)fahrenheitEditingDidBegin:(id)sender;
+//- (IBAction)celsiusEditingDidBegin:(id)sender;
+//- (IBAction)fahrenheitEditingDidBegin:(id)sender;
 
 - (float)celsiusToFahrenheit:(float)celsiusValue;
 - (float)fahrenheitToCelsius:(float)fahrenheitValue;
@@ -52,13 +52,24 @@ BOOL inputIsFahrenheit = YES;
 }
 
 #pragma mark - private methods
+//
+//- (IBAction)celsiusEditingDidBegin:(id)sender {
+//    inputIsFahrenheit = NO;
+//}
+//
+//- (IBAction)fahrenheitEditingDidBegin:(id)sender {
+//    inputIsFahrenheit = YES;
+//}
 
-- (IBAction)celsiusEditingDidBegin:(id)sender {
-    inputIsFahrenheit = NO;
-}
-
-- (IBAction)fahrenheitEditingDidBegin:(id)sender {
-    inputIsFahrenheit = YES;
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    
+    if (textField == self.celsiusTextField) {
+        inputIsFahrenheit = NO;
+    } else if (textField == self.fahrenheitTextField) {
+        inputIsFahrenheit = YES;
+    }
+    
+    return YES;
 }
 
 
